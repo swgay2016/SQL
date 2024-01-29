@@ -1,0 +1,29 @@
+Order items by price
+SELECT *
+FROM superstore
+ORDER BY price desc;
+
+Statistic about item prices
+SELECT SUM(price),item_name
+FROM superstore
+GROUP By item_name ;
+
+SELECT AVG(price),item_name
+FROM superstore
+Group BY item_name;
+
+SELECT MIN(price),item_name
+FROM superstore
+GROUP BY item_name;
+
+SELECT MAX(price),item_name
+FROM superstore
+GROUP BY item_name;
+
+SELECT COUNT(price),item_name
+FROM superstore
+Group BY item_name;
+
+Statistic about price for items in a Category
+SELECT * FROM superstore 
+WHERE category = 'Kitchen Supplies'
